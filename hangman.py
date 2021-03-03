@@ -17,7 +17,7 @@ else:
     exe = Executionr(word)
 
 try:
-    gue = Guessr("." * len(word), True)
+    gue = Guessr("." * len(word))
 except GameWonException as g: # special case, only one word in our memory is of that length
     print("Your word was {}, gg ez".format(g.args[0]))
     exit(0)
